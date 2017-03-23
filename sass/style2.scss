@@ -1,0 +1,118 @@
+$border: 4px solid;
+$desktop: "(min-width:700px)";
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Oxygen", Arial, sans-serif;
+}
+
+html {
+    font-size: 50px;
+}
+
+
+#header {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ef/c6/d9/efc6d99cf4ac33217e661068775de927.gif");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+    @media #{$desktop} {
+        height: 100vh;
+    }
+    .header-content {
+        text-align: center;
+        padding: 3vh;
+        @media #{$desktop} {
+            padding-top: 30vh;
+        }
+        h1 {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: lighter;
+            padding: 15px;
+            letter-spacing: 4px;
+            @media #{$desktop} {
+                color: white;
+                border: 3px solid green;
+                font-size: 1rem;
+                font-weight: lighter;
+                padding: 0.15rem;
+                letter-spacing: 4px;
+                max-width: 80vw;
+                position: relative;
+            }
+            &:hover {
+                cursor: pointer;
+                border-color: #3CD6FF;
+                transition: 1s;
+                color: #3CD6FF
+            }
+            &:active {
+                color: black;
+                transition: 0.2s;
+            }
+        }
+    }
+}
+
+#section {
+    background-color: white;
+    // background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    .section-content {
+        text-align: center;
+        padding-top: 1.4rem;
+        h2 {
+            color: black;
+            font-size: 0.8rem;
+            border: $border;
+            padding: 10px;
+        }
+    }
+    #app {
+        font-size: 0.7rem;
+        letter-spacing: 5px;
+        line-height: 30px;
+        overflow-x: hidden;
+        width: 90vw;
+        height: 9rem;
+        @media #{$desktop} {
+            margin-top: 40px;
+            letter-spacing: 5px;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        table {
+            margin-bottom: 1rem;
+            font-size: 0.6rem;
+            width: 100%;
+            max-width: 400px;
+            @media #{$desktop} {
+                margin-bottom: 1rem;
+                font-size: 0.1rem;
+                max-width: 100%
+            }
+        }
+        td {
+            margin-top: 15px;
+            padding-right: 40px;
+            padding-left: 40px;
+            font-size: 0.6rem;
+            display: block;
+            @media #{$desktop} {
+                margin-top: 15px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 0.6rem;
+                display: inline;
+            }
+        }
+    }
+}
