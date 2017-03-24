@@ -1,4 +1,6 @@
 $border: 4px solid;
+$biggerMobile: "(min-width: 378px) and (max-width: 530px)";
+$biggestMobile: "(min-width: 531px) and (max-width: 699px)";
 $desktop: "(min-width:700px)";
 
 * {
@@ -21,12 +23,18 @@ html {
     background-attachment: fixed;
     width: 100%;
     height: 50vh;
+    @media #{$biggerMobile} {
+
+    }
     @media #{$desktop} {
         height: 100vh;
     }
     .header-content {
         text-align: center;
         padding: 3vh;
+        @media #{$biggerMobile} {
+            padding: 1vh;
+        }
         @media #{$desktop} {
             padding-top: 30vh;
         }
@@ -36,6 +44,12 @@ html {
             font-weight: lighter;
             padding: 15px;
             letter-spacing: 4px;
+            margin-top: 4vh;
+            @media #{$biggerMobile} {
+                margin-top: 10vh;
+                width: 100%;
+                max-width: 350px;
+            }
             @media #{$desktop} {
                 color: white;
                 border: 3px solid green;
