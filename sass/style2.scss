@@ -147,16 +147,17 @@ html {
     height: 30vh;
     color: white;
     @media #{$desktop} {
-        height: 20vh;
+        height: 13vh;
     }
     .footer-content {
         display: block;
         margin-left: 20px;
         margin-right: 20px;
+        color: darkgrey;
         @media #{$desktop} {
             display: flex;
             justify-content: space-between;
-            padding-top: 28px;
+            padding-top: 5px;
             color: darkgrey;
         }
         p {
@@ -165,9 +166,9 @@ html {
             margin-left: 20px;
             margin-right: 20px;
             font-size: 0.5rem;
-            line-height: 1rem;
+            line-height: 0.6rem;
             @media #{$desktop} {
-
+                font-size: 0.3rem;
             }
         }
     }
