@@ -103,7 +103,7 @@ html {
         line-height: 30px;
         overflow-x: hidden;
         width: 90vw;
-        height: 9rem;
+        height: 11rem;
         @media #{biggerMobile} {
 
         }
@@ -137,6 +137,37 @@ html {
                 display: inline-flex;
                 width: 7rem;
                 height: 0.5rem;
+            }
+        }
+    }
+}
+#footer {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    color: white;
+    @media #{$desktop} {
+        height: 20vh;
+    }
+    .footer-content {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+        @media #{$desktop} {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 28px;
+            color: darkgrey;
+        }
+        p {
+            text-align: center;
+            padding-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 0.5rem;
+            line-height: 1rem;
+            @media #{$desktop} {
+
             }
         }
     }
